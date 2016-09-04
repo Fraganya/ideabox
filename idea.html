@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IdeaBox</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- font files -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header section-->
+    <div class="container">
+        <h1 id="banner">
+            <span class="icon fa fa-cube"></span> IdeaBox
+        </h1>
+        <hr>    
+    </div>
+    <!--end of header section -->
+   <section class="container">
+         <!--static info of the idea -->
+        <div class="col-sm-4">
+            <div class="idea-name"><h3>Ideaname</h3></div>
+            
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                        <h4 class="panel-title">Overview</h4>
+                </div>
+                <div class="panel-body">
+                        User defined overview of the idea upon adding
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <h3>Brainstorming info</h3> 
+            <hr style="margin-bottom:0.5%;/">
+            <!--brainstorming ideas -->
+              <div class="media">
+                <div class="media-body">
+                <h4 class="contributors-name">Contibutor's name</h4>
+                <p>
+                    Additional info about the project
+                </p>
+                </div>
+             </div>
+              <div class="media">
+                <div class="media-body">
+                <h4 class="contributors-name">Contibutor's name</h4>
+                <p>
+                    Additional info about the project
+                </p>
+                </div>
+             </div>
+
+              <!-- brainstorming form -->
+              <div class="pull-left">
+              <form action="" method="POST" class="form-horizontal  " role="form">
+                      <div class="form-group">
+                          <label for="username" class="control-label col-sm-4">Name</label>
+                          <div class="col-sm-8">
+                              <input type="text" placeholder="username" class="form-control">
+                          </div>
+                      </div>
+                       <div class="form-group">
+                          <label for="info" class="control-label col-sm-4">info</label>
+                          <div class="col-sm-8">
+                              <textarea name="" id="info"   rows="3" class="form-control"></textarea>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-sm-12 ">
+                              <button type="submit" class="btn btn-custom rad-0 pull-right">Add Info</button>
+                          </div>
+                      </div>
+              </form>
+              </div>
+
+        </div>
+        
+        
+   </section>
+     <!-- end of main container -->
+</body>
+</html>

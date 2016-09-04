@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idea Box</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- font files -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header section-->
+        <nav class="navbar custom-navbar" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ideabox-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home" data-toggle="tab"><span class="icon fa fa-cube"></span> IdeaBox</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="ideabox-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#users" data-toggle="tab">Users</a></li>
+                    <li><a href="#ideas" data-toggle="tab">Ideas</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Francis <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+           
+
+    <!--end of header section -->
+    <div class="container">
+        <div class="row">
+             <div class="tab-content">
+                 <!-- home pane -->
+                 <div class="tab-pane fade in " id="home">
+                        <div class="col-sm-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">Recent Ideas</h3>
+                                </div>       
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Item 1</a>
+                                    <a href="#" class="list-group-item">Item 2</a>
+                                    <a href="#" class="list-group-item">Item 3</a>
+                                </div>  
+                            </div>                          
+                        </div>
+
+                         <div class="col-sm-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">Top Users</h3>
+                                </div>       
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Item 1</a>
+                                    <a href="#" class="list-group-item">Item 2</a>
+                                    <a href="#" class="list-group-item">Item 3</a>
+                                </div>  
+                            </div>                          
+                        </div>
+                </div>
+                <!-- users pane -->
+                <div class="tab-pane fade in active" id="users">
+                    <div class="container">
+                      <form action="" method="POST" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="search" class="form-control" placeholder="Find user">
+                            </div>  
+                        </div>
+                     </form>
+
+                     <ul class="list-unstyled user-list">
+                         <li class="user-list-item">
+                             <div class="user">
+                                 <span class="glyphicon glyphicon-user"></span>&nbsp;
+                                 <span class="username">Francis</span>&nbsp;
+                                 <span class="glyphicon glyphicon-envelope"> &rarr; Email </span> &middot;
+                                 <span class="glyphicon glyphicon-phone"> &rarr; Contact</span>
+                             </div>                          
+                         </li>
+                         
+                      
+                     </ul>
+                     </div>
+                </div>
+                 <!-- ideas pane -->
+                <div class="tab-pane fade in " id="ideas">
+                    <div class="col-sm-3">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">My ideas</h3>
+                                </div>       
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Item 1</a>
+                                    <a href="#" class="list-group-item">Item 2</a>
+                                    <a href="#" class="list-group-item">Item 3</a>
+                                </div>  
+                            </div>                          
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                <h3 class="panel-title">All ideas</h3>
+                                </div>       
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Item 1</a>
+                                    <a href="#" class="list-group-item">Item 2</a>
+                                    <a href="#" class="list-group-item">Item 3</a>
+                                </div>  
+                            </div>                          
+                        </div>
+                </div>
+                 <!-- settings pane -->
+                <div class="tab-pane fade in " id="settings">
+                    <div class="container">
+                    <form action="" method="POST" class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="firstname" class="control-label  col-sm-4 ">Firstname</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="control-label  col-sm-4 ">Lastname</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label  col-sm-4 ">Password</label>
+                                <div class="col-sm-5">
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                              <div class="form-group">
+                                <label for="privacy" class="control-label  col-sm-4 ">Privacy</label>
+                                <div class="col-sm-5">
+                                    <select name="privacy" id="privacy" class="form-control">
+                                        <option value="public">Public</option>
+                                        <option value="private">Private</option>
+                                    </select>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="email" class="control-label  col-sm-4 ">Email</label>
+                                <div class="col-sm-5">
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="contact" class="control-label  col-sm-4 ">Contact</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-9">
+                                    <button type="submit" class="btn btn-primary pull-right">Update</button>
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+             </div>
+          
+        </div>
+    </div>
+     <!-- script files : Jquery, bootstap && index.js -->
+     <script src="js/jquery-2.1.3.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
